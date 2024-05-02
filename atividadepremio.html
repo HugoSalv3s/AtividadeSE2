@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AtividadePremiada</title>
+</head>
+<body>
+
+    <p>Nome do funcionário: <span id="NomeFuncionario"></span></p>
+    <p>Valor da meta: <span id="ValorFixo"></span></p>
+    <p>Valor de vendas do funcionário: <span id="ValorVendas"></span></p>
+    <p>Resultado: <span id="Resultado"></span></p>
+
+    <script>
+
+        let nomefuncionario
+        let valorvenda
+        let valorfixo
+        let resultado
+
+        nomefuncionario = prompt("Digite o Nome do Funcionário: ")
+        valorfixo = Number (prompt("Digite o valor da meta: "))
+        valorvenda = Number (prompt("Digite o valor de vendas pelo funcionário: "))
+
+
+        if(valorvenda >= valorfixo){
+            resultado = "Ganhou"
+        }
+
+        else{
+            resultado = "Não Ganhou"
+        }
+
+
+
+
+        document.getElementById("NomeFuncionario") .innerHTML = nomefuncionario
+        document.getElementById("ValorFixo") .innerHTML = valorfixo
+        document.getElementById("ValorVendas") .innerHTML = valorvenda
+        document.getElementById("Resultado") .innerHTML = resultado
+
+
+
+    </script>
+
+    
+</body>
+</html>

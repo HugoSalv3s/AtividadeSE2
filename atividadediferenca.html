@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AtividadeDiferença</title>
+</head>
+<body>
+    
+<h1>Diferença entre numeros</h1>
+
+<p>Primeiro Valor: <span id="PrimeiroNumero"></span></p>
+<p>Segundo Valor: <span id="SegundoNumero"></span></p>
+<p>Diferença: <span id="Resultado"></span></p>
+
+
+<script>
+
+let primeironumero
+let segundonumero
+let resposta
+
+
+primeironumero =  Number (prompt("Digite o Primeiro Número: "))
+segundonumero = Number (prompt("Digite o Primeiro Número: "))
+
+if(primeironumero > segundonumero){
+    resposta = primeironumero - segundonumero
+}
+
+else{
+    resposta = segundonumero - primeironumero    
+}
+
+
+document.getElementById("PrimeiroNumero") .innerHTML = primeironumero
+document.getElementById("SegundoNumero") .innerHTML = segundonumero
+document.getElementById("Resultado") .innerHTML = resposta
+
+</script>
+
+
+</body>
+</html>
